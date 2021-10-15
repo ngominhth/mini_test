@@ -4,33 +4,7 @@
        
     </head>
     <body>
-        <script>
-            function click_kiemtra()
-            {
-                let nhap_a=parseInt(document.getElementById("nhap_a").value);
-                let nhap_b=parseInt(document.getElementById("nhap_b").value);
-                let nhap_c=parseInt(document.getElementById("nhap_c").value);
-                if(nhap_a>0 && nhap_b>0 && nhap_c>0)
-                {
-                    if(nhap_a+nhap_b>nhap_c && nhap_b+nhap_c>nhap_a && nhap_a+nhap_c>nhap_b)
-                    {
-                        document.getElementById("hien_thi").innerHTML="Là tam giác";
-                    }
-                    else if(nhap_a==nhap_b || nhap_a=nhap_c || nhap_b==nhap_c)
-                    {
-                       
-                            document.getElementById("hien_thi").innerHTML="Là tam giác cân";
-                        
-                        
-                    }
-                    
-                } 
-                
-                
-            } 
-            
-             
-           </script>   
+        
         <form action="" method="post">
             <table>
                 <caption>Kiểm tra tam giác</caption>
@@ -48,7 +22,33 @@
                         </td></tr>
             </table>
         </form>
-    
+        <script>
+            function click_kiemtra()
+            {
+                let nhap_a=parseInt(document.getElementById("nhap_a").value);
+                let nhap_b=parseInt(document.getElementById("nhap_b").value);
+                let nhap_c=parseInt(document.getElementById("nhap_c").value);
+                if(nhap_a>0 && nhap_b>0 && nhap_c>0)
+                {
+                    if(nhap_a+nhap_b>nhap_c && nhap_b+nhap_c>nhap_a && nhap_a+nhap_c>nhap_b)
+                    {
+                        document.getElementById("hien_thi").innerHTML="Là tam giác";
+                    }
+                    else if(nhap_a==nhap_b || nhap_a==nhap_c || nhap_b==nhap_c)
+                    {
+                       
+                            document.getElementById("hien_thi").innerHTML="Là tam giác cân";
+                        
+                        
+                    }
+                    
+                } 
+                
+                
+            } 
+            
+             
+           </script>  
    
     </body>
    
