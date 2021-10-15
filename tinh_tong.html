@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+          
+        <form action="" method="post">
+            <table>
+                <caption>Tính tổng các số</caption>
+                <tr><td>nhập a</td>
+                    <td><input type="text" id="nhap_a"></td></tr>
+                    <tr><td>nhập b</td>
+                        <td><input type="text" id="nhap_b"></td></tr>
+                 
+                        <tr><td><input type="button" onclick="click_tinhtong();" value="Tính"></td></tr>
+                        
+                        <tr><td>
+                            <p id="hien_thi"></p>
+                        </td></tr>
+            </table>
+        </form>
+    
+        <script>
+            function click_tinhtong()
+            {
+                let nhap_a=parseInt(document.getElementById("nhap_a").value);
+                let nhap_b=parseInt(document.getElementById("nhap_b").value);
+                
+                let tong=0;
+                for(let i=nhap_a; i<=nhap_b; i++)
+                {
+                    tong=tong+i;
+                    
+                }
+               
+               document.getElementById("hien_thi").innerHTML="tổng = "+tong;
+            } 
+            
+             
+           </script> 
+    </body>
+   
+</html>
+
+
+

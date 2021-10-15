@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <script>
+            function click_tinhmu()
+            {
+                let nhap_a=document.getElementById("nhap_a").value;
+                let nhap_b=document.getElementById("nhap_b").value;
+                let tinh_mot=nhap_a*nhap_a;
+                let tinh_hai=Math.pow(nhap_a,nhap_b);
+                
+                document.getElementById("hien_thi").innerHTML="Kết quả 1= "+tinh_mot+" Kết quả 2 = "+tinh_hai;
+            } 
+            
+             
+           </script>   
+        <form action="" method="post">
+            <table>
+                <caption>Tính mũ</caption>
+                <tr><td>nhập a</td>
+                    <td><input type="text" id="nhap_a"></td></tr>
+                    <tr><td>nhập b</td>
+                        <td><input type="text" id="nhap_b"></td></tr>
+                 
+                        <tr><td><input type="button" onclick="click_tinhmu();" value="Tính"></td></tr>
+                        
+                        <tr><td>
+                            <p id="hien_thi"></p>
+                        </td></tr>
+            </table>
+        </form>
+    
+   
+    </body>
+   
+</html>
+
+
+

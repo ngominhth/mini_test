@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <script>
+            function click_chuvi()
+            {
+                let nhap_a=document.getElementById("nhap_a").value;
+                let chuVi=nhap_a*4;
+                
+                document.getElementById("hien_thi").innerHTML="Chu vi= "+chuVi;
+            } 
+            function click_dientich()
+            {
+                let nhap_a=document.getElementById("nhap_a").value;
+               
+                let dienTich=nhap_a*nhap_a;
+                document.getElementById("hien_thi").innerHTML="Diện tích= "+dienTich;
+            } 
+             
+           </script>   
+        <form action="" method="post">
+            <table>
+                <caption>Chu vi và diện tích hình vuông</caption>
+                <tr><td>nhập a</td>
+                    <td><input type="text" id="nhap_a"></td></tr>
+                 
+                        <tr><td><input type="button" onclick="click_chuvi();" value="Tính chu vi"></td></tr>
+                        <tr><td><input type="button" onclick="click_dientich();" value="Tính diện tích"></td></tr>
+                        <tr><td>
+                            <p id="hien_thi"></p>
+                        </td></tr>
+            </table>
+        </form>
+    
+   
+    </body>
+   
+</html>
+
+
+

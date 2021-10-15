@@ -1,0 +1,58 @@
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <script>
+            function click_kiemtra()
+            {
+                let nhap_a=parseInt(document.getElementById("nhap_a").value);
+                let nhap_b=parseInt(document.getElementById("nhap_b").value);
+                let nhap_c=parseInt(document.getElementById("nhap_c").value);
+                if(nhap_a>0 && nhap_b>0 && nhap_c>0)
+                {
+                    if(nhap_a+nhap_b>nhap_c && nhap_b+nhap_c>nhap_a && nhap_a+nhap_c>nhap_b)
+                    {
+                        document.getElementById("hien_thi").innerHTML="Là tam giác";
+                    }
+                    else if(nhap_a==nhap_b || nhap_a=nhap_c || nhap_b==nhap_c)
+                    {
+                       
+                            document.getElementById("hien_thi").innerHTML="Là tam giác cân";
+                        
+                        
+                    }
+                    
+                } 
+                
+                
+            } 
+            
+             
+           </script>   
+        <form action="" method="post">
+            <table>
+                <caption>Kiểm tra tam giác</caption>
+                <tr><td>nhập a</td>
+                    <td><input type="text" id="nhap_a"></td></tr>
+                    <tr><td>nhập b</td>
+                        <td><input type="text" id="nhap_b"></td></tr>
+                        <tr><td>nhập c</td>
+                            <td><input type="text" id="nhap_c"></td></tr>    
+                 
+                        <tr><td><input type="button" onclick="click_kiemtra();" value="Kiểm tra tam giác"></td></tr>
+                        
+                        <tr><td>
+                            <p id="hien_thi"></p>
+                        </td></tr>
+            </table>
+        </form>
+    
+   
+    </body>
+   
+</html>
+
+
+

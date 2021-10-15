@@ -1,0 +1,47 @@
+<!--1,câu lệnh dùng để hiển thị hộp thoại là:
+alert("Minh")
+//2,câu lệnh để nhận giá trị từ một hộp thoại là
+prompt()
+//3,câu lệnh nhận giá trị từ một thẻ input là:
+document.getElementById("id hoặc").value;-->
+<!--<script>
+    let thong_bao=prompt("nhập giá trị");
+    alert(thongbao);
+    
+</script>-->
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <script>
+            function click_s()
+            {
+                let nhap_a=document.getElementById("nhap_a").value;
+                let nhap_b=document.getElementById("nhap_b").value;
+                let S=nhap_a*nhap_b;
+                document.getElementById("hien_thi").innerHTML="S= "+S;
+            } 
+             
+           </script>   
+        <form action="" method="post">
+            <table>
+                <tr><td>nhập a</td>
+                    <td><input type="text" id="nhap_a"></td></tr>
+                 <tr><td>nhập b</td>
+                        <td><input type="text" id="nhap_b"></td></tr>
+                <tr>
+                        <td><input type="button" onclick="click_s();" value="Tính S"></td></tr>
+                        <tr><td>
+                            <h1 id="hien_thi"></h1>
+                        </td></tr>
+            </table>
+        </form>
+    
+   
+    </body>
+   
+</html>
+
+
+
